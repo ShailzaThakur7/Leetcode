@@ -1,4 +1,5 @@
 class Solution {
+//duplicate 
 public:
     bool containsDuplicate(vector<int>& nums) {
         unordered_set<int> set;
