@@ -1,5 +1,6 @@
 class Solution {
 public:
+// check
     bool isAnagram(string s, string t) {
         if(s.length()!=t.length()){
             return false;
