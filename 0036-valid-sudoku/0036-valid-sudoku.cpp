@@ -1,4 +1,5 @@
 class Solution {
+//check
     // Function to check if a row is valid
     static bool isValidRow(vector<char>& row){
         int checker = 0, num;
