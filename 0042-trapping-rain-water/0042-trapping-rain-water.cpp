@@ -1,5 +1,6 @@
 class Solution {
 public:
+//check 
     int trap(vector<int>& height) {
         
         //limit to trap water
