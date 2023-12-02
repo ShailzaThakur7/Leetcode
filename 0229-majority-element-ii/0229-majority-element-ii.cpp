@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> majorityElement(vector<int>& nums) {
-        
+        //check
         unordered_map<int,int> c;
         unordered_set<int> result;
         
