@@ -10,6 +10,7 @@
  */
 class Solution {
 public:
+//check
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         if(list1==NULL){
             return list2;
