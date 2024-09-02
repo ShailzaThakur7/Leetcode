@@ -12,23 +12,18 @@
 class Solution {
 public:
     int maxPathSum(TreeNode* root) {
-        int sum=INT_MIN;
-        dfs(root,sum);
-        return sum;
+        int maxi=INT_MIN;
+        maxPath(root,maxi);
+        return maxi;
         
     }
-private:
-    int dfs(TreeNode* node,int& sum){
+    int maxPath(TreeNode* node,int& maxi){
         if(node==NULL){
             return 0;
         }
-        
-        int left=max(0,dfs(node->left,sum));
-        int right=max(0,dfs(node->right,sum));
-        
-        sum=max(sum,node->val+left+right);
-        
-        return node->val+max(left,right);
-        
+        int lh=max(0,maxPath(node->left,maxi));
+        int rh=max(0,maxPath(node->right,maxi));
+        maxi=max(maxi,lh+rh+node->val);
+        return max(lh,rh)+node->val;
     }
 };
